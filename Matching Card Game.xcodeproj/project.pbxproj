@@ -56,15 +56,23 @@
 		F4020AA2251E730F00C3E44F /* Matching Card Game */ = {
 			isa = PBXGroup;
 			children = (
-				F4020AA3251E730F00C3E44F /* AppDelegate.swift */,
-				F4020AA5251E730F00C3E44F /* SceneDelegate.swift */,
+				F4020AB7251E741A00C3E44F /* Supporting FIles */,
 				F4020AA7251E730F00C3E44F /* ViewController.swift */,
 				F4020AA9251E730F00C3E44F /* Main.storyboard */,
+			);
+			path = "Matching Card Game";
+			sourceTree = "<group>";
+		};
+		F4020AB7251E741A00C3E44F /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
+				F4020AA3251E730F00C3E44F /* AppDelegate.swift */,
+				F4020AA5251E730F00C3E44F /* SceneDelegate.swift */,
 				F4020AAC251E731100C3E44F /* Assets.xcassets */,
 				F4020AAE251E731100C3E44F /* LaunchScreen.storyboard */,
 				F4020AB1251E731100C3E44F /* Info.plist */,
 			);
-			path = "Matching Card Game";
+			name = "Supporting FIles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
