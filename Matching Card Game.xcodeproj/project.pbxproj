@@ -13,6 +13,9 @@
 		F4020AAB251E730F00C3E44F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4020AA9251E730F00C3E44F /* Main.storyboard */; };
 		F4020AAD251E731100C3E44F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4020AAC251E731100C3E44F /* Assets.xcassets */; };
 		F4020AB0251E731100C3E44F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4020AAE251E731100C3E44F /* LaunchScreen.storyboard */; };
+		F4020ABC251E8F2200C3E44F /* GamePlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4020ABB251E8F2200C3E44F /* GamePlay.storyboard */; };
+		F4020AC2251E904700C3E44F /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4020AC1251E904700C3E44F /* GamePlayViewController.swift */; };
+		F4020AC5251E914300C3E44F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4020AC4251E914300C3E44F /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F4020AAC251E731100C3E44F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4020AAF251E731100C3E44F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4020AB1251E731100C3E44F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4020ABB251E8F2200C3E44F /* GamePlay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GamePlay.storyboard; sourceTree = "<group>"; };
+		F4020AC1251E904700C3E44F /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
+		F4020AC4251E914300C3E44F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		F4020AA2251E730F00C3E44F /* Matching Card Game */ = {
 			isa = PBXGroup;
 			children = (
+				F4020AC3251E90F100C3E44F /* Extensions */,
+				F4020AB8251E8DE300C3E44F /* Game Play */,
 				F4020AB7251E741A00C3E44F /* Supporting FIles */,
 				F4020AA7251E730F00C3E44F /* ViewController.swift */,
 				F4020AA9251E730F00C3E44F /* Main.storyboard */,
@@ -73,6 +81,23 @@
 				F4020AB1251E731100C3E44F /* Info.plist */,
 			);
 			name = "Supporting FIles";
+			sourceTree = "<group>";
+		};
+		F4020AB8251E8DE300C3E44F /* Game Play */ = {
+			isa = PBXGroup;
+			children = (
+				F4020ABB251E8F2200C3E44F /* GamePlay.storyboard */,
+				F4020AC1251E904700C3E44F /* GamePlayViewController.swift */,
+			);
+			path = "Game Play";
+			sourceTree = "<group>";
+		};
+		F4020AC3251E90F100C3E44F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F4020AC4251E914300C3E44F /* UIViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +160,7 @@
 			files = (
 				F4020AB0251E731100C3E44F /* LaunchScreen.storyboard in Resources */,
 				F4020AAD251E731100C3E44F /* Assets.xcassets in Resources */,
+				F4020ABC251E8F2200C3E44F /* GamePlay.storyboard in Resources */,
 				F4020AAB251E730F00C3E44F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,8 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4020AC5251E914300C3E44F /* UIViewExtension.swift in Sources */,
 				F4020AA8251E730F00C3E44F /* ViewController.swift in Sources */,
 				F4020AA4251E730F00C3E44F /* AppDelegate.swift in Sources */,
+				F4020AC2251E904700C3E44F /* GamePlayViewController.swift in Sources */,
 				F4020AA6251E730F00C3E44F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
