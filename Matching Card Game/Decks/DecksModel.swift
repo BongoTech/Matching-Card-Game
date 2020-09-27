@@ -14,26 +14,41 @@ class DecksModel {
     private static func createDeck() -> Deck {
         var cards = [Card]()
         
-        var usedCards = [UInt32]()
+        var usedCardsOnce = [UInt32]()
+        var usedCardsTwice = [UInt32]()
         var index = 0
         
         while (index < 36) {
             var random: UInt32
             
             random = arc4random_uniform(18) + 1
-            while (usedCards.contains(random)) {
-                random = arc4random_uniform(18) + 1
-            }
-            usedCards.append(random)
             
-            let card1 = Card(frontImageName: "card_\(random)", isFlipped: false)
-            let card2 = Card(frontImageName: "card_\(random)", isFlipped: false)
+            if usedCardsTwice.contains(random) {
+                while usedCardsTwice.contains(random) {
+                    random = arc4random_uniform(18) + 1
+                }
+                if usedCardsOnce.contains(random) {
+                    usedCardsTwice.append(random)
+                } else {
+                    usedCardsOnce.append(random)
+                }
+            } else if usedCardsOnce.contains(random) {
+                usedCardsTwice.append(random)
+            } else {
+                usedCardsOnce.append(random)
+            }
+            
+            let card1 = Card(frontImageName: "card_\(random)", isFlipped: false, isMatched: false)
+            //let card2 = Card(frontImageName: "card_\(random)", isFlipped: false, isMatched: false)
             //print(random)
 
             cards.append(card1)
-            cards.append(card2)
-            index += 2
+            //cards.append(card2)
+            index += 1
         }
+        
+        print(usedCardsTwice)
+        print(usedCardsOnce)
         
         return Deck(name: "Fun Shapes", cards: cards)
     }

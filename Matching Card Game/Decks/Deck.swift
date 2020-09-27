@@ -8,4 +8,5 @@ struct Deck {
 struct Card {
     var frontImageName: String
     var isFlipped: Bool
+    var isMatched: Bool
 }
