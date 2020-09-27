@@ -16,6 +16,10 @@
 		F4020ABC251E8F2200C3E44F /* GamePlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4020ABB251E8F2200C3E44F /* GamePlay.storyboard */; };
 		F4020AC2251E904700C3E44F /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4020AC1251E904700C3E44F /* GamePlayViewController.swift */; };
 		F4020AC5251E914300C3E44F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4020AC4251E914300C3E44F /* UIViewExtension.swift */; };
+		F4020AC72520F8C600C3E44F /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4020AC62520F8C600C3E44F /* CardCollectionViewCell.swift */; };
+		F4020AC92520FA7100C3E44F /* GamePlayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4020AC82520FA7100C3E44F /* GamePlayModel.swift */; };
+		F4020ACC2520FABC00C3E44F /* DecksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4020ACB2520FABC00C3E44F /* DecksModel.swift */; };
+		F4020ACE2520FACA00C3E44F /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4020ACD2520FACA00C3E44F /* Deck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		F4020ABB251E8F2200C3E44F /* GamePlay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GamePlay.storyboard; sourceTree = "<group>"; };
 		F4020AC1251E904700C3E44F /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
 		F4020AC4251E914300C3E44F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		F4020AC62520F8C600C3E44F /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4020AC82520FA7100C3E44F /* GamePlayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayModel.swift; sourceTree = "<group>"; };
+		F4020ACB2520FABC00C3E44F /* DecksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksModel.swift; sourceTree = "<group>"; };
+		F4020ACD2520FACA00C3E44F /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 		F4020AA2251E730F00C3E44F /* Matching Card Game */ = {
 			isa = PBXGroup;
 			children = (
+				F4020ACA2520FA8500C3E44F /* Decks */,
 				F4020AC3251E90F100C3E44F /* Extensions */,
 				F4020AB8251E8DE300C3E44F /* Game Play */,
 				F4020AB7251E741A00C3E44F /* Supporting FIles */,
@@ -88,6 +97,7 @@
 			children = (
 				F4020ABB251E8F2200C3E44F /* GamePlay.storyboard */,
 				F4020AC1251E904700C3E44F /* GamePlayViewController.swift */,
+				F4020AC82520FA7100C3E44F /* GamePlayModel.swift */,
 			);
 			path = "Game Play";
 			sourceTree = "<group>";
@@ -96,8 +106,18 @@
 			isa = PBXGroup;
 			children = (
 				F4020AC4251E914300C3E44F /* UIViewExtension.swift */,
+				F4020AC62520F8C600C3E44F /* CardCollectionViewCell.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4020ACA2520FA8500C3E44F /* Decks */ = {
+			isa = PBXGroup;
+			children = (
+				F4020ACB2520FABC00C3E44F /* DecksModel.swift */,
+				F4020ACD2520FACA00C3E44F /* Deck.swift */,
+			);
+			path = Decks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,10 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4020ACE2520FACA00C3E44F /* Deck.swift in Sources */,
 				F4020AC5251E914300C3E44F /* UIViewExtension.swift in Sources */,
 				F4020AA8251E730F00C3E44F /* ViewController.swift in Sources */,
 				F4020AA4251E730F00C3E44F /* AppDelegate.swift in Sources */,
 				F4020AC2251E904700C3E44F /* GamePlayViewController.swift in Sources */,
+				F4020AC92520FA7100C3E44F /* GamePlayModel.swift in Sources */,
+				F4020AC72520F8C600C3E44F /* CardCollectionViewCell.swift in Sources */,
+				F4020ACC2520FABC00C3E44F /* DecksModel.swift in Sources */,
 				F4020AA6251E730F00C3E44F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
