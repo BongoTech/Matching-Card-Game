@@ -26,9 +26,9 @@ class DecksModel {
             }
             usedCards.append(random)
             
-            let card1 = Card(frontImageName: "card_\(random)")
-            let card2 = Card(frontImageName: "card_\(random)")
-            print(random)
+            let card1 = Card(frontImageName: "card_\(random)", isFlipped: false)
+            let card2 = Card(frontImageName: "card_\(random)", isFlipped: false)
+            //print(random)
 
             cards.append(card1)
             cards.append(card2)

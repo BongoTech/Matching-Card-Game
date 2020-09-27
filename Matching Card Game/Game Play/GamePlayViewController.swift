@@ -35,5 +35,14 @@ extension GamePlayViewController: UICollectionViewDataSource {
 }
 
 extension GamePlayViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! CardCollectionViewCell
+        if (!deck.cards[indexPath.row].isFlipped) {
+            cell.flip()
+            deck.cards[indexPath.row].isFlipped = true
+        } else {
+            cell.flipBack()
+            deck.cards[indexPath.row].isFlipped = false
+        }        
+    }
 }

@@ -2,9 +2,10 @@ import Foundation
 
 struct Deck {
     let name: String
-    let cards: [Card]
+    var cards: [Card]
 }
 
 struct Card {
     var frontImageName: String
+    var isFlipped: Bool
 }
